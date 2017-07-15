@@ -1,0 +1,21 @@
+//navbar
+//$navbar-default-bg: #f00;
+//$navbar-height: 40px;
+
+
+//body
+//$body-bg:           rgb(239, 242, 242);
+$grid-gutter-width:         30px;
+//## Define the maximum width of `.container` for different screen sizes.
+// Small screen / tablet
+$container-tablet:             (510px + $grid-gutter-width) !default;
+//** For `$screen-sm-min` and up.
+$container-sm:                 $container-tablet !default;
+// Medium screen / desktop
+$container-desktop:            (730px + $grid-gutter-width) !default;
+//** For `$screen-md-min` and up.
+$container-md:                 $container-desktop !default;
+// Large screen / wide desktop
+$container-large-desktop:      (930px + $grid-gutter-width) !default;
+//** For `$screen-lg-min` and up.
+$container-lg:                 $container-large-desktop !default;
