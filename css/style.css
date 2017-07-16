@@ -26,43 +26,54 @@ body {
   body h1 {
     font-size: 20px; }
 
-@media (min-width: 768px) {
-  .navbar-nav {
-    float: none;
-    margin: 0 auto;
-    display: table;
-    table-layout: fixed; } }
-.header-container h1 {
-  display: inline-block;
-  margin-top: 4px;
-  font-family: "Myriad Pro"; }
-.header-container p {
-  font-size: 14px;
-  margin-top: 4px;
-  margin-right: -7px; }
-
-.order-panels {
-  display: flex;
-  margin-top: 20px;
-  padding-right: 0; }
-  .order-panels .order-from-systems {
-    padding-left: 12px;
-    width: 80%;
-    margin-right: 28px; }
-    .order-panels .order-from-systems .panel-body {
-      padding-top: 0; }
-  .order-panels .all-order {
-    width: 38%;
-    margin-right: 0;
-    padding-right: 0; }
-  .order-panels .order-form {
-    display: block;
+.header-container {
+  margin-bottom: 15px;
+  text-align: center; }
+  .header-container h1 {
+    display: inline-block;
+    margin-top: 4px;
+    font-family: "Myriad Pro"; }
+  .header-container p {
+    display: none;
     font-size: 14px;
-    color: #909090;
+    margin-top: 4px;
+    margin-right: -7px; }
+
+.header-of-system {
+  margin-bottom: 20px; }
+
+.panel {
+  padding: 0 22px 22px 22px; }
+
+.order-from-systems hr {
+  margin: 0; }
+
+.all-order.panel {
+  padding-top: 20px; }
+  .all-order.panel hr {
+    margin-top: 12px;
+    margin-bottom: 12px; }
+  .all-order.panel a {
+    font-size: 14px; }
+  .all-order.panel h1 p {
+    margin-top: -10px;
+    margin-bottom: 19px; }
+
+.order-form {
+  display: block;
+  color: #909090; }
+
+.sign-about-license {
+  font-size: 14px;
+  color: #909090;
+  margin-bottom: 15px; }
+  .sign-about-license .text-nowrap {
+    margin: 0; }
+
+.form-group.right {
+  display: inline-block; }
+  .form-group.right label.order-form {
     text-align: right; }
-  .order-panels h1 {
-    margin-top: 20px;
-    margin-bottom: 20px; }
 
 .finally-sum {
   font-size: 30px;
@@ -77,31 +88,99 @@ body {
 label {
   font-weight: normal; }
 
-.checkbox-label input {
-  position: absolute; }
-.checkbox-label label {
-  position: relative;
-  left: 20px; }
+.checkbox-label {
+  font-size: 14px;
+  margin-top: -25px;
+  margin-bottom: 6px; }
+  .checkbox-label input {
+    position: absolute; }
+  .checkbox-label label {
+    position: relative;
+    left: 20px; }
 
 .offers {
-  margin-top: 30px;
+  margin-top: 80px;
   width: 100%;
-  background-color: #fff;
-  padding-top: 30px;
-  padding-bottom: 30px; }
+  background-color: #fff; }
+  .offers h1 {
+    font-weight: normal; }
   .offers .container {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 16px; }
     .offers .container .get-off, .offers .container .corporate-offer {
-      width: 70%; }
+      width: 70%;
+      margin: 65px 25px 65px 25px; }
 
 .footer {
-  margin-bottom: 0px;
+  margin-bottom: 25px;
   font-size: 13px;
   color: #909090; }
   .footer p {
-    margin: 1px; }
+    margin: 5px; }
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    float: none;
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed; } }
+select.form-control {
+  width: 100%; }
+
+.price-sum {
+  text-align: left;
+  margin-bottom: 24px; }
+  .price-sum #price-of-Windows-port, .price-sum #price-of-linux-port, .price-sum #price-of-mac-port {
+    display: inline; }
+  .price-sum .sign-about-license {
+    display: block; }
+  .price-sum .sign-about-license.text-nowrap {
+    display: inline; }
+
+.quantity .sign-about-license {
+  display: block; }
+.quantity #quantity-windows {
+  text-align: right;
+  display: block; }
+
+.total-sum {
+  display: none; }
+
+@media (min-width: 768px) {
+  .header-container {
+    text-align: left; }
+    .header-container p {
+      display: inline-block;
+      font-size: 14px;
+      margin-top: 4px;
+      margin-right: -7px; }
+
+  .panel {
+    padding: 0 22px 0px 22px; }
+
+  .price-sum {
+    text-align: right;
+    margin-bottom: 0; }
+    .price-sum #price-of-Windows-port, .price-sum #price-of-linux-port, .price-sum #price-of-mac-port {
+      display: block; }
+    .price-sum .sign-about-license.text-nowrap {
+      display: inline-block; }
+
+  .total-sum {
+    display: inline-block; }
+
+  select.form-control {
+    width: 90%; }
+
+  .row {
+    display: flex; }
+
+  .order-from-systems {
+    height: 100%; }
+
+  .all-order {
+    height: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
