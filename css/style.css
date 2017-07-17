@@ -40,7 +40,11 @@ body {
     margin-right: -7px; }
 
 .header-of-system {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  margin-top: 30px; }
+  .header-of-system h1 {
+    display: inline;
+    vertical-align: middle; }
 
 .panel {
   padding: 0 22px 22px 22px; }
@@ -141,9 +145,10 @@ select.form-control {
 
 .quantity .sign-about-license {
   display: block; }
-.quantity #quantity-windows {
+
+#quantity-windows, #quantity-linux, #quantity-mac {
   text-align: right;
-  display: block; }
+  max-width: 60px; }
 
 .total-sum {
   display: none; }
@@ -163,6 +168,8 @@ select.form-control {
   .price-sum {
     text-align: right;
     margin-bottom: 0; }
+    .price-sum .sign-about-license {
+      display: inline-block; }
     .price-sum #price-of-Windows-port, .price-sum #price-of-linux-port, .price-sum #price-of-mac-port {
       display: block; }
     .price-sum .sign-about-license.text-nowrap {

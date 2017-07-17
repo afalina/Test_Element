@@ -58,6 +58,11 @@ body {
 
 .header-of-system {
   margin-bottom: 20px;
+  margin-top: 30px;
+  h1 {
+    display: inline;
+    vertical-align: middle;
+  }
 }
 
 .panel {
@@ -196,10 +201,11 @@ select.form-control {
   .sign-about-license {
     display: block;
   }
-  #quantity-windows {
-    text-align: right;
-    display: block;
-  }
+}
+
+#quantity-windows, #quantity-linux, #quantity-mac {
+  text-align: right;
+  max-width: 60px;
 }
 
 .total-sum {
@@ -224,6 +230,9 @@ select.form-control {
   .price-sum {
     text-align: right;
     margin-bottom: 0;
+    .sign-about-license {
+      display: inline-block;
+    }
     #price-of-Windows-port, #price-of-linux-port, #price-of-mac-port {
       display: block;
     }

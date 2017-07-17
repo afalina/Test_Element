@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -42,15 +42,25 @@
 
                     <div class="windows">
                         <div class="header-of-system">
-                            <h1><img src="img/logo_win.png"> Windows</h1>
+                            <img src="img/logo_win.png"><h1> Windows</h1>
                         </div>
                         <div class="order-items row">
 
                             <div class="col-md-6 col-xs-12">
                                 <div class="form-group">
                                     <label class="sign-about-license">Shared ports</label>
-                                    <select class="form-control">
-                                        <option>1 Port</option>
+                                    <select class="form-control" id="select-of-windows-port">
+                                        <option value="89.99">1 Port</option>
+                                        <option value="109.99">2 Ports</option>
+                                        <option value="139.99">3 Ports</option>
+                                        <option value="159.99">4 Ports</option>
+                                        <option value="189.99">5 Ports</option>
+                                        <option value="219.99">6 Ports</option>
+                                        <option value="249.99">7 Ports</option>
+                                        <option value="279.99">8 Ports</option>
+                                        <option value="309.99">9 Ports</option>
+                                        <option value="359.99">10 Ports</option>
+                                        <option value="555.55">Unlimited Ports</option>
                                     </select>
                                 </div>
                             </div>
@@ -60,18 +70,18 @@
 
                                     <div class="col-md-4 col-xs-6 text-right price-sum">
                                         <label class="sign-about-license">Price</label>
-                                        <p style="margin-bottom: 0" id="price-of-Windows-port">$99.99</p>
-                                        <label class="sign-about-license text-nowrap">save 92%</label>
+                                        <p style="margin-bottom: 0" id="price-of-Windows-port">$<span></span></p>
+                                        <label class="sign-about-license text-nowrap" id="save-for-windows-port">save <span>92</span>%</label>
                                     </div>
 
                                     <div class="col-md-3 col-xs-6 text-right">
                                         <label class="sign-about-license">Quantity</label><br>
-                                        <input style="text-align: right" min="0" value="0" max="1000" type="number">
+                                        <input id="quantity-windows" style="text-align: right" min="0" value="0" max="1000" type="number">
                                     </div>
 
                                     <div class="col-md-5 text-right total-sum">
                                         <label class="sign-about-license">Total</label>
-                                        <p><b>$99.99</b></p>
+                                        <p id="total-price-of-windows-port"><b>$<span>99.99</span></b></p>
                                     </div>
 
                                 </div>
@@ -83,15 +93,25 @@
 
                     <div class="linux">
                         <div class="header-of-system">
-                            <h1><img src="img/logo_linux.png"> Linux</h1>
+                            <img src="img/logo_linux.png"><h1> Linux</h1>
                         </div>
                         <div class="order-items row">
 
                             <div class="col-md-6 col-xs-12">
                                 <div class="form-group">
                                     <label class="sign-about-license">Shared ports</label>
-                                    <select class="form-control">
-                                        <option>1 Port</option>
+                                    <select id="select-of-linux-port" class="form-control">
+                                        <option value="30.99">1 Port</option>
+                                        <option value="55.99">2 Ports</option>
+                                        <option value="95.99">3 Ports</option>
+                                        <option value="99.99">4 Ports</option>
+                                        <option value="109.99">5 Ports</option>
+                                        <option value="199.99">6 Ports</option>
+                                        <option value="219.99">7 Ports</option>
+                                        <option value="255.99">8 Ports</option>
+                                        <option value="289.99">9 Ports</option>
+                                        <option value="399.99">10 Ports</option>
+                                        <option value="400.00">Unlimited Ports</option>
                                     </select>
                                 </div>
                             </div>
@@ -101,18 +121,18 @@
 
                                     <div class="col-md-4 col-xs-6 text-right price-sum">
                                         <label class="sign-about-license">Price</label>
-                                        <p style="margin-bottom: 0" id="price-of-linux-port">$99.99</p>
-                                        <label class="sign-about-license text-nowrap">save 92%</label>
+                                        <p style="margin-bottom: 0" id="price-of-linux-port">$<span></span></p>
+                                        <label id="save-for-linux-port" class="sign-about-license text-nowrap">save <span>92</span>%</label>
                                     </div>
 
                                     <div class="col-md-3 col-xs-6 text-right">
                                         <label class="sign-about-license">Quantity</label><br>
-                                        <input style="text-align: right" min="0" value="0" max="1000" type="number">
+                                        <input id="quantity-linux" style="text-align: right" min="0" value="0" max="1000" type="number">
                                     </div>
 
                                     <div class="col-md-5 text-right total-sum">
                                         <label class="sign-about-license">Total</label>
-                                        <p><b>$99.99</b></p>
+                                        <p id="total-price-of-linux-port"><b>$<span>99.99</span></b></p>
                                     </div>
 
                                 </div>
@@ -124,15 +144,25 @@
 
                     <div class="mac">
                         <div class="header-of-system">
-                            <h1><img src="img/logo_apple.png"> Mac</h1>
+                            <img src="img/logo_apple.png"><h1> Mac</h1>
                         </div>
                         <div class="order-items row">
 
                             <div class="col-md-6 col-xs-12">
                                 <div class="form-group">
                                     <label class="sign-about-license">Shared ports</label>
-                                    <select class="form-control">
-                                        <option>1 Port</option>
+                                    <select id="select-of-mac-port" class="form-control">
+                                        <option value="55.99">1 Port</option>
+                                        <option value="109.99">2 Ports</option>
+                                        <option value="112.99">3 Ports</option>
+                                        <option value="123.99">4 Ports</option>
+                                        <option value="159.99">5 Ports</option>
+                                        <option value="299.99">6 Ports</option>
+                                        <option value="249.99">7 Ports</option>
+                                        <option value="300.99">8 Ports</option>
+                                        <option value="389.99">9 Ports</option>
+                                        <option value="599.99">10 Ports</option>
+                                        <option value="699.99">Unlimited Ports</option>
                                     </select>
                                 </div>
                             </div>
@@ -142,18 +172,18 @@
 
                                     <div class="col-md-4 col-xs-6 text-right price-sum">
                                         <label class="sign-about-license">Price</label>
-                                        <p style="margin-bottom: 0" id="price-of-mac-port">$99.99</p>
-                                        <label class="sign-about-license text-nowrap">save 92%</label>
+                                        <p style="margin-bottom: 0" id="price-of-mac-port">$<span>99.99</span></p>
+                                        <label id="save-for-mac-port" class="sign-about-license text-nowrap">save <span>92</span>%</label>
                                     </div>
 
                                     <div class="col-md-3 col-xs-6 text-right">
                                         <label class="sign-about-license">Quantity</label><br>
-                                        <input style="text-align: right" min="0" value="0" max="1000" type="number">
+                                        <input id="quantity-mac" style="text-align: right" min="0" value="0" max="1000" type="number">
                                     </div>
 
                                     <div class="col-md-5 text-right total-sum">
                                         <label class="sign-about-license">Total</label>
-                                        <p><b>$99.99</b></p>
+                                        <p id="total-price-of-mac-port"><b>$<span>99.99</span></b></p>
                                     </div>
 
                                 </div>
@@ -167,22 +197,22 @@
                 <div class="panel panel-default all-order">
                     <b>Total</b>
                     <hr>
-                    <a>4 items</a>
+                    <a><span id="all-items"></span> items</a>
                     <hr>
-                    <h1 class="finally-sum">$00.00
+                    <h1 class="finally-sum">$<span id="all-total-sum">00.00</span>
                         <br><p><small>+VAT to some countries</small></p></h1>
                     <a>Check coupon code</a>
                     <hr style="margin-top:30px;">
                     <p style="font-size: 14px; color: #c52627; margin-bottom: 5px"><b>Additional support offers</b></p>
                     <br>
                     <div class="checkbox-label">
-                        <input type="checkbox">
-                        <label><b>$11.99</b><br>Lifetime Upgrades Guarantee</label>
+                        <input type="checkbox" id="lifetime" value="11.99">
+                        <label for="lifetime"><b>$11.99</b><br>Lifetime Upgrades Guarantee</label>
                     </div>
                     <br>
                     <div class="checkbox-label">
-                        <input type="checkbox">
-                        <label><b>$15.00/year</b><br>Urgent Support Plan</label>
+                        <input type="checkbox" id="urgent" value="15.00">
+                        <label for="urgent"><b>$15.00/year</b><br>Urgent Support Plan</label>
                     </div>
                     <br>
                     <button class="btn btn-danger form-control">Process my order</button>
@@ -262,18 +292,18 @@
         </div>
 
         <div class="row">
-        <div class="col-md-2 col-xs-4">© 2000-2017</div>
-        <div class="col-md-1 col-xs-8"> Software</div>
+            <div class="col-md-2 col-xs-4">© 2000-2017</div>
+            <div class="col-md-1 col-xs-8"> Software</div>
             <div class="col-md-1 col-xs-2"> Sales</div>
             <div class="col-md-1 col-xs-2"> Policies</div>
             <div class="col-md-1 col-xs-2"> Contacts</div>
-
+        </div>
     </div>
 
-    <script src="js/script.js"></script>
-    <!--<script src="js/tether.min.js"></script>-->
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 
 
 </body>
