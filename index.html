@@ -8,26 +8,53 @@
 </head>
 
 <body>
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar">
-            <ul class="nav navbar-nav">
-                <li><a class="navbar-brand" href="#"><img src="img/logo.png"></a></li>
-                <li class="active"><a class="btn" href="#">Win Apps</a></li>
-                <li><a href="#">Mac Apps</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-        </div>
+
+
+<nav class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header" style="text-align: center;">
+        <a class="navbar-brand" href="#" style="
+            /*display: inline-block;*/
+            float: none;
+            vertical-align: middle;
+        "><img src="img/logo.png"></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" style="float:none">
+            <span class="sr-only">Toggle navigation</span><a href="#"> Mac Apps</a>
+            <span class="glyphicon glyphicon-menu-down"></span>
+        </button>
     </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav">
+            <li><a class="navbar-brand" href="#"><img src="img/logo.png"></a></li>
+            <li><a href="#">Win Apps</a></li>
+            <li><a href="#">Mac Apps</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
 </nav>
+
+<!--<nav class="navbar navbar-default">-->
+    <!--<div class="container">-->
+        <!--<div class="navbar-header" style="">-->
+            <!--<div>-->
+                <!--<button type="button" style="vertical-align: middle; border: none;" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">-->
+                    <!--<a href="#">Mac Apps </a><span class="glyphicon glyphicon-menu-down"></span>-->
+                <!--</button>-->
+                <!--<a class="navbar-brand" href="#"><img src="img/logo.png"></a>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="collapse navbar-collapse" id="navbar">-->
+            <!--<ul class="nav navbar-nav">-->
+                <!--<li><a class="active-link" href="#">Win Apps</a></li>-->
+                <!--<li><a href="#">Mac Apps</a></li>-->
+                <!--<li><a href="#">Support</a></li>-->
+                <!--<li><a href="#">Blog</a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</nav>-->
 
     <div class="container header-container">
         <h1>Purchase USB Network</h1>
@@ -71,7 +98,7 @@
                                     <div class="col-md-4 col-xs-6 text-right price-sum">
                                         <label class="sign-about-license">Price</label>
                                         <p style="margin-bottom: 0" id="price-of-Windows-port">$<span></span></p>
-                                        <label class="sign-about-license text-nowrap" id="save-for-windows-port">save <span>92</span>%</label>
+                                        <label class="sign-about-license text-nowrap" id="save-for-windows-port">save <span></span>%</label>
                                     </div>
 
                                     <div class="col-md-3 col-xs-6 text-right">
@@ -122,7 +149,7 @@
                                     <div class="col-md-4 col-xs-6 text-right price-sum">
                                         <label class="sign-about-license">Price</label>
                                         <p style="margin-bottom: 0" id="price-of-linux-port">$<span></span></p>
-                                        <label id="save-for-linux-port" class="sign-about-license text-nowrap">save <span>92</span>%</label>
+                                        <label id="save-for-linux-port" class="sign-about-license text-nowrap">save <span></span>%</label>
                                     </div>
 
                                     <div class="col-md-3 col-xs-6 text-right">

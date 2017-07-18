@@ -24,6 +24,8 @@ var macDiscount = $('#save-for-mac-port');
 var macDiscountVal = $('#save-for-mac-port span');
 
 //all
+var maxDiscount = 92;
+
 var allItems = $('#all-items');
 var allTotalSum = $('#all-total-sum');
 var lifetime = $('#lifetime');
@@ -50,38 +52,89 @@ function reCalculateAll() {
 
 function reCalculateWindows() {
     if (windowsCountPorts.val() > 1) {
-        windowsPrice.text(((windowsType.val() * Math.pow((1-0.0055), windowsCountPorts.val()-1))).toFixed(2));
-        windowsDiscountVal.text((100 - ((windowsType.val() * Math.pow((1 - 0.055), windowsCountPorts.val()-1)) * 100) / windowsType.val()).toFixed(0));
+        windowsDiscountVal.text(
+            Math.min(
+                5.5 * (windowsCountPorts.val()),
+                maxDiscount
+            ).toFixed(0)
+        );
+
+        windowsPrice.text(
+            (Number(windowsType.val()) *
+            (1 - Number(windowsDiscountVal.text()) / 100))
+                .toFixed(2)
+        );
+
         windowsDiscount.show();
     } else {
-        windowsPrice.text(windowsType.val());
+        windowsPrice.text(
+            Number(windowsType.val())
+        );
+
         windowsDiscount.hide();
     }
-    windowsTotalPrice.text((windowsPrice.text() * windowsCountPorts.val()).toFixed(2));
+    windowsTotalPrice.text(
+        (Number(windowsPrice.text()) *
+         Number(windowsCountPorts.val())
+        ).toFixed(2));
 }
 
 function reCalculateLinux() {
     if (linuxCountPorts.val() > 1) {
-        linuxPrice.text((linuxType.val()*(1-0.0055) * Math.pow((1-0.0055), linuxCountPorts.val())).toFixed(2));
-        linuxDiscountVal.text((100 - ((linuxType.val() * Math.pow((1 - 0.055), linuxCountPorts.val()-1)) * 100) / linuxType.val()).toFixed(0));
+        linuxDiscountVal.text(
+            Math.min(
+                5.5 * (linuxCountPorts.val()),
+                maxDiscount
+            ).toFixed(0)
+        );
+
+        linuxPrice.text(
+            (Number(linuxType.val()) *
+            (1 - Number(linuxDiscountVal.text()) / 100))
+                .toFixed(2)
+        );
+
         linuxDiscount.show();
     } else {
-        linuxPrice.text(linuxType.val());
+        linuxPrice.text(
+            Number(linuxType.val())
+        );
+
         linuxDiscount.hide();
     }
-    linuxTotalPrice.text((linuxPrice.text() * linuxCountPorts.val()).toFixed(2));
+    linuxTotalPrice.text(
+        (Number(linuxPrice.text()) *
+            Number(linuxCountPorts.val())
+        ).toFixed(2));
 }
 
 function reCalculateMac() {
     if (macCountPorts.val() > 1) {
-        macPrice.text(((macType.val() * Math.pow((1-0.0055), macCountPorts.val()-1))).toFixed(2));
-        macDiscountVal.text((100 - ((macType.val() * Math.pow((1 - 0.055), macCountPorts.val()-1)) * 100) / macType.val()).toFixed(0));
+        macDiscountVal.text(
+            Math.min(
+                5.5 * (macCountPorts.val()),
+                maxDiscount
+            ).toFixed(0)
+        );
+
+        macPrice.text(
+            (Number(macType.val()) *
+            (1 - Number(macDiscountVal.text()) / 100))
+                .toFixed(2)
+        );
+
         macDiscount.show();
     } else {
-        macPrice.text(macType.val());
+        macPrice.text(
+            Number(macType.val())
+        );
+
         macDiscount.hide();
     }
-    macTotalPrice.text((macPrice.text() * macCountPorts.val()).toFixed(2));
+    macTotalPrice.text(
+        (Number(macPrice.text()) *
+            Number(macCountPorts.val())
+        ).toFixed(2));
 }
 
 $(function(){

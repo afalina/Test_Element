@@ -1,34 +1,33 @@
 @import 'variables.scss';
 
-.navbar {
-  height: 40px;
-  background-color: #fff;
-  text-align: center;
-  font-size: 13px;
-  font-family: "Myriad Pro";
-  li {
-    .navbar-brand {
-      padding: 8px;
-      margin-right: 20px;
-    }
-    //width: 90px;
-    .btn {
-      height: 20px;
-      padding-left: 10px;
-      margin-top: 8px;
-      width: 90px;
-      text-align: left;
-      font-size: 13px;
-      background-color: rgba(0,0,0, 0.15);
-      line-height: 2px;
-    }
-  }
-  a {
-    .navbar-brand {
-      padding: 10px 10px 10px 0;
-    }
-  }
-}
+//.navbar {
+//  height: 40px;
+//  background-color: #fff;
+//  font-size: 13px;
+//  font-family: "Myriad Pro";
+//
+//  //position: relative;
+//  .container {
+//    text-align: center;
+//  }
+
+
+
+//  li {
+//    .navbar-brand {
+//      //float: none;
+//      padding: 8px;
+//      margin-right: 20px;
+//    }
+//  }
+//  a {
+//    .navbar-brand {
+//      position: absolute;
+//      left: 50%;
+//      float: none;
+//    }
+ // }
+//}
 
 body {
   font-family: "Helvetica Neue";
@@ -58,7 +57,7 @@ body {
 
 .header-of-system {
   margin-bottom: 20px;
-  margin-top: 30px;
+  margin-top: 20px;
   h1 {
     display: inline;
     vertical-align: middle;
@@ -170,15 +169,6 @@ label {
   }
 }
 
-@media (min-width: 768px){
-  .navbar-nav{
-    float:none;
-    margin: 0 auto;
-    display: table;
-    table-layout: fixed;
-  }
-}
-
 select.form-control {
   width: 100%;
 }
@@ -212,6 +202,21 @@ select.form-control {
   display: none;
 }
 
+
+@media (min-width: 768px){
+  //.navbar-nav {
+  //  float: none;
+  //  margin: 0 auto;
+  //  display: table;
+  //  table-layout: fixed;
+  //  .active-link {
+  //    background: #e7e7e7;
+  //    padding: 7px 15px 4px 15px;
+  //    margin-top: 8px;
+  //    border-radius: 6px;
+  //  }
+  //}
+}
 
 
 @media (min-width: 768px) {
@@ -254,5 +259,45 @@ select.form-control {
   }
   .all-order {
     height: 100%;
+  }
+}
+
+
+.navbar {
+  background-color: #fff;
+  //min-height: 40px;
+  font-size: 13px;
+  font-family: "Myriad Pro";
+  .navbar-header {
+    //height: 40px;
+    .navbar-brand {
+    display: inline-block;
+  }
+  }
+  .nav  > li .navbar-brand {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    background-color: #fff;
+    .navbar-header .navbar-brand {
+      display: none;
+    }
+    .nav  > li .navbar-brand {
+      display: inline;
+    }
+    .navbar-toggle {
+      border: none;
+      color: #909090;
+      vertical-align: middle;
+    }
+  }
+  .navbar-nav{
+    float:none;
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
   }
 }
