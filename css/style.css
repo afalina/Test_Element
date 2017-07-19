@@ -1,0 +1,244 @@
+body {
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  background-color: #eff2f2; }
+  body h1 {
+    font-size: 20px; }
+
+.header-container {
+  margin-bottom: 15px;
+  text-align: center; }
+  .header-container h1 {
+    display: inline-block;
+    margin-top: 4px;
+    font-family: "Myriad Pro"; }
+  .header-container p {
+    display: none;
+    font-size: 14px; }
+
+.header-of-system {
+  margin-bottom: 20px;
+  margin-top: 20px; }
+  .header-of-system h1 {
+    display: inline;
+    vertical-align: middle; }
+
+.panel {
+  padding: 0 22px 0 22px; }
+
+.order-from-systems hr {
+  margin: 0; }
+
+.all-order.panel {
+  padding-top: 20px; }
+  .all-order.panel hr {
+    margin-top: 12px;
+    margin-bottom: 12px; }
+  .all-order.panel a {
+    font-size: 14px; }
+  .all-order.panel h1 p {
+    margin-top: -10px;
+    margin-bottom: 19px; }
+
+.order-form {
+  display: block;
+  color: #909090; }
+
+.sign-about-license {
+  font-size: 14px;
+  color: #909090;
+  margin-bottom: 15px; }
+  .sign-about-license .text-nowrap {
+    margin: 0; }
+
+.form-group.right {
+  display: inline-block; }
+  .form-group.right label.order-form {
+    text-align: right; }
+
+.finally-sum {
+  font-size: 30px;
+  font-weight: bold; }
+  .finally-sum small {
+    font-size: 14px;
+    font-weight: normal; }
+
+.btn-danger {
+  background: linear-gradient(to bottom, #ff481b, #c32526); }
+
+label {
+  font-weight: normal; }
+
+.checkbox-label {
+  font-size: 14px;
+  margin-top: -25px;
+  margin-bottom: 6px; }
+  .checkbox-label input {
+    position: absolute; }
+  .checkbox-label label {
+    position: relative;
+    left: 20px; }
+
+.offers {
+  margin-top: 80px;
+  width: 100%;
+  background-color: #fff; }
+  .offers h1 {
+    font-weight: normal; }
+  .offers .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px; }
+    .offers .container .get-off, .offers .container .corporate-offer {
+      width: 70%;
+      margin: 65px 25px 65px 25px; }
+
+.footer {
+  margin-bottom: 25px;
+  font-size: 13px;
+  color: #909090; }
+  .footer p {
+    margin: 5px; }
+  .footer .footer-links a {
+    color: #909090; }
+  .footer .choose-lang {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px; }
+    .footer .choose-lang p {
+      display: inline;
+      float: right; }
+
+select.form-control {
+  width: 100%; }
+
+.price-sum {
+  text-align: left;
+  margin-bottom: 24px; }
+  .price-sum #price-of-Windows-port, .price-sum #price-of-linux-port, .price-sum #price-of-mac-port {
+    display: inline; }
+  .price-sum .sign-about-license {
+    display: block; }
+  .price-sum .sign-about-license.text-nowrap {
+    display: inline; }
+
+.quantity .sign-about-license {
+  display: block; }
+
+#quantity-windows, #quantity-linux, #quantity-mac {
+  text-align: right;
+  max-width: 60px; }
+
+.total-sum {
+  display: none; }
+
+.panel {
+  padding: 0 22px 22px 22px; }
+
+.central-row {
+  margin: 0; }
+
+@media (min-width: 992px) {
+  .header-container {
+    text-align: left; }
+    .header-container p {
+      display: inline-block;
+      font-size: 14px;
+      margin-right: 0; }
+
+  .panel {
+    padding: 0 22px 22px 22px; }
+
+  .price-sum {
+    text-align: right;
+    margin-bottom: 0; }
+    .price-sum .sign-about-license {
+      display: inline-block; }
+    .price-sum #price-of-Windows-port, .price-sum #price-of-linux-port, .price-sum #price-of-mac-port {
+      margin-bottom: 0;
+      display: block; }
+    .price-sum .sign-about-license.text-nowrap {
+      display: inline-block; }
+
+  .total-sum {
+    display: inline-block; }
+
+  select.form-control {
+    width: 90%; }
+
+  .row {
+    display: flex; }
+
+  .all-order {
+    margin-left: 35px; }
+    .all-order .additional {
+      font-size: 14px;
+      color: #c52627;
+      margin-bottom: 5px; } }
+.dropdown-lang {
+  font-size: 16px;
+  position: absolute;
+  right: 22px;
+  top: 9px; }
+
+.navbar {
+  background-color: #fff;
+  font-size: 13px;
+  font-family: "Myriad Pro"; }
+  .navbar .navbar-header {
+    text-align: center; }
+    .navbar .navbar-header .navbar-brand {
+      display: inline-block;
+      float: none;
+      vertical-align: middle;
+      padding-right: 0;
+      padding-top: 11px; }
+    .navbar .navbar-header .menu-button {
+      float: none;
+      border: none;
+      vertical-align: middle; }
+      .navbar .navbar-header .menu-button a {
+        color: #909090; }
+  .navbar .nav > li .navbar-brand {
+    display: none; }
+
+.subnavbar {
+  font-size: 13px;
+  font-family: 'Myriad Pro';
+  width: 100%;
+  background-color: #f12929;
+  text-align: center;
+  display: block;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  color: white;
+  height: 30px; }
+  .subnavbar p {
+    margin: 0;
+    padding-top: 7px; }
+
+@media (min-width: 768px) {
+  .navbar {
+    background-color: #fff; }
+    .navbar .navbar-header .navbar-brand {
+      display: none; }
+    .navbar .nav > li .navbar-brand {
+      display: inline; }
+    .navbar .active-link {
+      background-color: #e7e7e7;
+      margin-top: 8px;
+      padding: 6px 30px 6px 10px;
+      border-radius: 4px; }
+
+  .navbar-nav {
+    float: none;
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed; }
+
+  .subnavbar {
+    display: none; } }
+
+/*# sourceMappingURL=style.css.map */

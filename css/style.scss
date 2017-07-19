@@ -1,0 +1,319 @@
+@import 'variables.scss';
+
+body {
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  background-color: rgb(239, 242, 242);
+  h1 {
+    font-size: 20px;
+  }
+}
+
+
+.header-container {
+  margin-bottom: 15px;
+  text-align: center;
+  h1 {
+    display: inline-block;
+    margin-top: 4px;
+    font-family: "Myriad Pro";
+  }
+  p {
+    display: none;
+    font-size: 14px;
+  }
+}
+
+.header-of-system {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  h1 {
+    display: inline;
+    vertical-align: middle;
+  }
+}
+
+.panel {
+  padding: 0 22px 0 22px;
+}
+.order-from-systems {
+  hr {
+    margin: 0;
+  }
+}
+
+.all-order.panel {
+    padding-top: 20px;
+    hr {
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+    a {
+      font-size: 14px;
+    }
+    h1 {
+      p {
+        margin-top: -10px;
+        margin-bottom: 19px;
+      }
+    }
+  }
+
+.order-form {
+  display: block;
+  color: #909090;
+}
+
+.sign-about-license {
+  font-size: 14px;
+  color: #909090;
+  margin-bottom: 15px;
+  .text-nowrap {
+    margin: 0;
+  }
+}
+
+.form-group.right {
+  display: inline-block;
+  label.order-form {
+    text-align: right;
+  }
+}
+
+
+.finally-sum {
+  font-size: 30px;
+  font-weight: bold;
+  small {
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
+.btn-danger {
+  background: linear-gradient(to bottom, rgb(255, 72, 27), rgb(195, 37, 38));
+}
+
+label {
+  font-weight: normal;
+}
+
+.checkbox-label {
+  font-size: 14px;
+  margin-top: -25px;
+  margin-bottom: 6px;
+  input {
+    position: absolute;
+  }
+  label {
+    position: relative;
+    left: 20px;
+  }
+}
+
+.offers {
+  margin-top: 80px;
+  width: 100%;
+  background-color: #fff;
+  h1 {
+    font-weight: normal;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  .get-off, .corporate-offer {
+    width: 70%;
+    margin: 65px 25px 65px 25px;
+  }
+  }
+}
+.footer {
+  margin-bottom: 25px;
+  font-size: 13px;
+  color: #909090;
+  p {
+    margin: 5px;
+  }
+  .footer-links {
+    a {
+      color: #909090;
+    }
+  }
+  .choose-lang {
+    background: rgba(0,0,0,0.1);
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px;
+    p {
+      display: inline;
+      float:right;
+    }
+  }
+}
+select.form-control {
+  width: 100%;
+}
+
+.price-sum {
+  text-align: left;
+  margin-bottom: 24px;
+  #price-of-Windows-port, #price-of-linux-port, #price-of-mac-port {
+    display: inline;
+  }
+  .sign-about-license {
+    display: block;
+  }
+  .sign-about-license.text-nowrap {
+    display: inline;
+  }
+}
+
+.quantity {
+  .sign-about-license {
+    display: block;
+  }
+}
+
+#quantity-windows, #quantity-linux, #quantity-mac {
+  text-align: right;
+  max-width: 60px;
+}
+
+.total-sum {
+  display: none;
+}
+.panel {
+  padding: 0 22px 22px 22px;
+}
+.central-row {
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  .header-container {
+    text-align: left;
+    p {
+      display: inline-block;
+      font-size: 14px;
+      margin-right: 0;
+    }
+  }
+  .panel {
+    padding: 0 22px 22px 22px;
+  }
+  .price-sum {
+    text-align: right;
+    margin-bottom: 0;
+    .sign-about-license {
+      display: inline-block;
+    }
+    #price-of-Windows-port, #price-of-linux-port, #price-of-mac-port {
+      margin-bottom: 0;
+      display: block;
+    }
+    .sign-about-license.text-nowrap {
+      display: inline-block;
+    }
+  }
+  .total-sum {
+    display: inline-block;
+  }
+  select.form-control {
+    width: 90%;
+  }
+  .row {
+    display: flex;
+  }
+  .order-from-systems {
+  }
+  .all-order {
+    margin-left: 35px;
+    .additional {
+      font-size: 14px;
+      color: #c52627;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.dropdown-lang {
+  font-size: 16px;
+  position: absolute;
+  right: 22px;
+  top: 9px;
+}
+
+
+.navbar {
+  background-color: #fff;
+  font-size: 13px;
+  font-family: "Myriad Pro";
+  .navbar-header {
+    text-align: center;
+    .navbar-brand {
+    display: inline-block;
+      float: none;
+      vertical-align: middle;
+      padding-right: 0;
+      padding-top: 11px;
+  }
+    .menu-button {
+      float: none;
+      border: none;
+      vertical-align: middle;
+      a {
+        color: #909090;
+      }
+    }
+  }
+  .nav  > li .navbar-brand {
+    display: none;
+  }
+}
+.subnavbar {
+  font-size: 13px;
+  font-family: 'Myriad Pro';
+  width: 100%;
+  background-color: rgb(241, 41, 41);
+  text-align: center;
+  display: block;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  color: white;
+  height: 30px;
+
+  p {
+    margin: 0;
+    padding-top: 7px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    background-color: #fff;
+    .navbar-header .navbar-brand {
+      display: none;
+    }
+    .nav  > li .navbar-brand {
+      display: inline;
+    }
+    .active-link {
+      background-color: #e7e7e7;
+      margin-top: 8px;
+      padding: 6px 30px 6px 10px;
+      border-radius: 4px;
+    }
+
+  }
+  .navbar-nav{
+    float:none;
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+  }
+
+  .subnavbar {
+    display: none;
+  }
+}
