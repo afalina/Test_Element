@@ -196,4 +196,13 @@ $(function(){
         reCalculateAll();
     });
 
+
+    $( window ).resize(function() {
+        if ($(window).width() < 992) {
+            $('.header-container h1').text('USB Network');
+        } else {
+            $('.header-container h1').text('Purchase USB Network');
+        }
+    });
+
 });

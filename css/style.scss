@@ -1,34 +1,5 @@
 @import 'variables.scss';
 
-//.navbar {
-//  height: 40px;
-//  background-color: #fff;
-//  font-size: 13px;
-//  font-family: "Myriad Pro";
-//
-//  //position: relative;
-//  .container {
-//    text-align: center;
-//  }
-
-
-
-//  li {
-//    .navbar-brand {
-//      //float: none;
-//      padding: 8px;
-//      margin-right: 20px;
-//    }
-//  }
-//  a {
-//    .navbar-brand {
-//      position: absolute;
-//      left: 50%;
-//      float: none;
-//    }
- // }
-//}
-
 body {
   font-family: "Helvetica Neue";
   font-size: 16px;
@@ -50,8 +21,6 @@ body {
   p {
     display: none;
     font-size: 14px;
-    margin-top: 4px;
-    margin-right: -7px;
   }
 }
 
@@ -65,7 +34,7 @@ body {
 }
 
 .panel {
-  padding: 0 22px 22px 22px;
+  padding: 0 22px 0 22px;
 }
 .order-from-systems {
   hr {
@@ -153,7 +122,6 @@ label {
     align-items: center;
     justify-content: center;
     font-size: 16px;
-    //padding: 15px;
   .get-off, .corporate-offer {
     width: 70%;
     margin: 65px 25px 65px 25px;
@@ -167,8 +135,22 @@ label {
   p {
     margin: 5px;
   }
+  .footer-links {
+    a {
+      color: #909090;
+    }
+  }
+  .choose-lang {
+    background: rgba(0,0,0,0.1);
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px;
+    p {
+      display: inline;
+      float:right;
+    }
+  }
 }
-
 select.form-control {
   width: 100%;
 }
@@ -201,36 +183,24 @@ select.form-control {
 .total-sum {
   display: none;
 }
-
-
-@media (min-width: 768px){
-  //.navbar-nav {
-  //  float: none;
-  //  margin: 0 auto;
-  //  display: table;
-  //  table-layout: fixed;
-  //  .active-link {
-  //    background: #e7e7e7;
-  //    padding: 7px 15px 4px 15px;
-  //    margin-top: 8px;
-  //    border-radius: 6px;
-  //  }
-  //}
+.panel {
+  padding: 0 22px 22px 22px;
+}
+.central-row {
+  margin: 0;
 }
 
-
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .header-container {
     text-align: left;
     p {
       display: inline-block;
       font-size: 14px;
-      margin-top: 4px;
-      margin-right: -7px;
+      margin-right: 0;
     }
   }
   .panel {
-    padding: 0 22px 0px 22px;
+    padding: 0 22px 22px 22px;
   }
   .price-sum {
     text-align: right;
@@ -239,6 +209,7 @@ select.form-control {
       display: inline-block;
     }
     #price-of-Windows-port, #price-of-linux-port, #price-of-mac-port {
+      margin-bottom: 0;
       display: block;
     }
     .sign-about-license.text-nowrap {
@@ -255,27 +226,66 @@ select.form-control {
     display: flex;
   }
   .order-from-systems {
-    height: 100%;
   }
   .all-order {
-    height: 100%;
+    margin-left: 35px;
+    .additional {
+      font-size: 14px;
+      color: #c52627;
+      margin-bottom: 5px;
+    }
   }
+}
+
+.dropdown-lang {
+  font-size: 16px;
+  position: absolute;
+  right: 22px;
+  top: 9px;
 }
 
 
 .navbar {
   background-color: #fff;
-  //min-height: 40px;
   font-size: 13px;
   font-family: "Myriad Pro";
   .navbar-header {
-    //height: 40px;
+    text-align: center;
     .navbar-brand {
     display: inline-block;
+      float: none;
+      vertical-align: middle;
+      padding-right: 0;
+      padding-top: 11px;
   }
+    .menu-button {
+      float: none;
+      border: none;
+      vertical-align: middle;
+      a {
+        color: #909090;
+      }
+    }
   }
   .nav  > li .navbar-brand {
     display: none;
+  }
+}
+.subnavbar {
+  font-size: 13px;
+  font-family: 'Myriad Pro';
+  width: 100%;
+  background-color: rgb(241, 41, 41);
+  text-align: center;
+  display: block;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  color: white;
+  height: 30px;
+
+  p {
+    margin: 0;
+    padding-top: 7px;
   }
 }
 
@@ -288,16 +298,22 @@ select.form-control {
     .nav  > li .navbar-brand {
       display: inline;
     }
-    .navbar-toggle {
-      border: none;
-      color: #909090;
-      vertical-align: middle;
+    .active-link {
+      background-color: #e7e7e7;
+      margin-top: 8px;
+      padding: 6px 30px 6px 10px;
+      border-radius: 4px;
     }
+
   }
   .navbar-nav{
     float:none;
     margin: 0 auto;
     display: table;
     table-layout: fixed;
+  }
+
+  .subnavbar {
+    display: none;
   }
 }
